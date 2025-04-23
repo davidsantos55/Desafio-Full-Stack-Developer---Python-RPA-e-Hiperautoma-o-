@@ -30,7 +30,8 @@ Automação Python que acessa o [Portal da Transparência](https://portaldatrans
 
 ## Estrutura do projeto
 
-desafio-fullstack-python/ ├── pycache/ # Arquivos compilados automaticamente pelo Python ├── evidencias/ # Capturas de tela (.png) das consultas ├── resultado/ # Resultados da automação em formato JSON ├── .gitignore # Arquivo que define o que o Git deve ignorar ├── config.json # Lista de pessoas para consulta (nome, CPF ou NIS) ├── credentials.json # (Ignorado) Credenciais da conta de serviço Google ├── main.py # Script principal da automação com Selenium ├── nome_arquivo # (Temporário) Arquivo auxiliar usado pela automação ├── resultado.json # Resultado consolidado da última execução ├── README.md # Documentação do projeto └── upload_drive_planilha.py # Script que envia os resultados para o Google Drive
+desafio-fullstack-python/ ├── pycache/ # Arquivos gerados automaticamente (ignorar) ├── evidencias/ # Capturas de tela (.png) ├── resultado/ # Resultados em JSON ├── .gitignore # Arquivos ignorados pelo Git ├── config.json # Lista de pessoas para consulta ├── credentials.json # (Ignorado) Credenciais Google ├── main.py # Script principal (automação) ├── nome_arquivo # Arquivo temporário (uso interno) ├── resultado.json # Último resultado gerado ├── README.md # Documentação do projeto └── upload_drive_planilha.py # Upload para Google Drive/Sheets
+
 
 ## Como usar 
 
