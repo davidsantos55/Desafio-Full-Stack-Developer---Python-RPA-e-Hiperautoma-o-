@@ -46,15 +46,22 @@ desafio-fullstack-python/
 
 ### 1. Clone o repositório
     - git clone https://github.com/davidsantos55/desafio-fullstack-python.git
-### 2. Instale as dependências 
-    - pip install selenium undetected-chromedriver
-### 3. Configure o arquivo config.json nesse seguinte formato:
+### 2.  Criar e ativar o ambiente virtual
+**windows**
+    - python -m venv venv
+**Linux**
+    - source venv/bin/activate
+
+### 3. Instalar as dependências
+    - pip install -r requirements.txt
+
+### 4. Configure o arquivo config.json nesse seguinte formato:
     
     {
     "pessoas": ["João Silva", "12345678900"]
     }   
 
-### 4. Configure a integração com Google Drive/Sheets
+### 5. Configure a integração com Google Drive/Sheets
 
     #### 📌 Passo a passo para obter o `credentials.json`:
 
@@ -78,5 +85,8 @@ desafio-fullstack-python/
 
 7. (Importante) Adicione essa linha ao seu `.gitignore`:
 
-### 5. Execute a Automação
+
+### 5. Adicionar o .gitignore
+
+### 6. Execute a Automação
     -python.py

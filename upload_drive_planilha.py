@@ -47,10 +47,10 @@ def enviar_arquivo(drive, caminho):
     })
     return f"https://drive.google.com/file/d/{arquivo['id']}/view?usp=sharing"
 
-def processar():
+def processar(lista_arquivos):
     drive = autenticar()
     aba = autenticar_sheets()
-    for nome_arquivo in os.listdir(PASTA_RESULTADOS):
+    for nome_arquivo in lista_arquivos:
         if not nome_arquivo.endswith(".json"):
             continue
         caminho = os.path.join(PASTA_RESULTADOS, nome_arquivo)
@@ -61,5 +61,3 @@ def processar():
         aba.append_row([resumo["identificador"], resumo["nome"], resumo["cpf"], resumo["datahora"], link])
         print(f"✅ {nome_arquivo} enviado e registrado.")
 
-if __name__ == "__main__":
-    processar()
