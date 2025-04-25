@@ -89,4 +89,4 @@ desafio-fullstack-python/
 ### 5. Adicionar o .gitignore
 
 ### 6. Execute a Automação
-    -python.py
+    - python.py
