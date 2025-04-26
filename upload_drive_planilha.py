@@ -59,5 +59,5 @@ def processar(lista_arquivos):
         resumo = resumir_dados(dados)
         link = enviar_arquivo(drive, caminho)
         aba.append_row([resumo["identificador"], resumo["nome"], resumo["cpf"], resumo["datahora"], link])
-        print(f"✅ {nome_arquivo} enviado e registrado.")
+        print(f" {nome_arquivo} enviado e registrado.")
 
